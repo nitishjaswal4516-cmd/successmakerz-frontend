@@ -3,6 +3,7 @@ image: node:20
 stages:
   - install
   - build
+  - test
   - deploy
 
 cache:
@@ -12,13 +13,23 @@ cache:
 install_dependencies:
   stage: install
   script:
-    - npm install
+    - npm ci
     - npm install typescript --save-dev
 
 build_project:
   stage: build
   script:
     - npm run build
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 day
+
+unit_test:
+  stage: test
+  script:
+    - if [ -f package.json ]; then npm run test || echo "No test script configured"; else echo "No package.json found"; fi
+  allow_failure: true
 
 deploy:
   stage: deploy

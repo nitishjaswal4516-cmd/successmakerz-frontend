@@ -7,11 +7,9 @@ stages:
 install_dependencies:
   stage: install
   script:
-    - cd frontend
     - npm install
 
 build_project:
   stage: build
   script:
-    - cd frontend
     - npm run build

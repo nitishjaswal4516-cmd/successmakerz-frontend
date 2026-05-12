@@ -3,7 +3,7 @@ export const PHONE_2 = '9817373428';
 export const WHATSAPP_1 = '917876838277';
 export const WHATSAPP_2 = '919817373428';
 export const EMAIL = 'jaswalkaku980@gmail.com';
-export const INSTAGRAM = 'https://instagram.com/nitishjaswal__;
+export const INSTAGRAM = 'https://instagram.com/nitishjaswal__';
 export const WA_MSG = encodeURIComponent('Hello Successmakerz! I want to inquire about visa services.');
 export const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 

@@ -1,15 +1,23 @@
+
 image: node:20
 
 stages:
   - install
   - build
 
+cache:
+  paths:
+    - node_modules/
+
 install_dependencies:
   stage: install
   script:
     - npm install
+    - npm install typescript --save-dev
 
 build_project:
   stage: build
   script:
     - npm run build
+
+

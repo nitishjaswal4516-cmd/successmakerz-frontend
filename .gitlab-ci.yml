@@ -19,5 +19,9 @@ build_project:
   stage: build
   script:
     - npm run build
+deploy:
+  stage: deploy
+  script:
+    - ssh ubuntu@YOUR_EC2_IP "cd ~/successmakerz && git pull origin main && npm install && npm run build && sudo cp -r dist/* /var/www/html/ && sudo systemctl restart nginx"
 
 

@@ -22,5 +22,11 @@ build_project:
 
 deploy:
   stage: deploy
+  before_script:
+    - apt-get update && apt-get install -y openssh-client
+    - mkdir -p ~/.ssh
+    - echo "$DEPLOY_SSH_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh-keyscan -H 18.225.177.121 >> ~/.ssh/known_hosts
   script:
     - ssh ubuntu@18.225.177.121 "cd ~/successmakerz && git pull origin main && npm install && npm run build && sudo cp -r dist/* /var/www/html/ && sudo systemctl restart nginx"

@@ -2,29 +2,60 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import Lead from './models/Lead.js';
 
-dotenv.config();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 // ── Middleware ──────────────────────────────────────────
+const allowedOrigins = [
+  process.env.FRONTEND_URL,
+  'http://localhost:5173',
+  'http://localhost:3000',
+  'http://127.0.0.1:5173',
+  'http://127.0.0.1:3000',
+];
+
 app.use(cors({
-  origin: [
-    process.env.FRONTEND_URL || 'http://localhost:5173',
-    'http://localhost:5173',
-    'http://localhost:3000',
-  ],
+  origin: (origin, callback) => {
+    if (!origin) {
+      return callback(null, true);
+    }
+    if (
+      allowedOrigins.includes(origin) ||
+      origin.startsWith('http://192.168.') ||
+      origin.startsWith('http://10.') ||
+      origin.startsWith('http://172.')
+    ) {
+      return callback(null, true);
+    }
+    return callback(new Error(`CORS origin denied: ${origin}`));
+  },
   methods: ['GET', 'POST'],
   credentials: true,
 }));
 app.use(express.json());
 
 // ── MongoDB Connection ──────────────────────────────────
-mongoose.connect(process.env.MONGODB_URI)
-  .then(() => console.log('✅ MongoDB Atlas connected successfully'))
-  .catch((err) => console.error('❌ MongoDB connection error:', err));
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/successmakerz';
+
+mongoose.connect(MONGODB_URI)
+  .then(() => {
+    const source = MONGODB_URI.includes('127.0.0.1') || MONGODB_URI.includes('localhost')
+      ? 'local MongoDB'
+      : 'MongoDB Atlas';
+    console.log(`✅ ${source} connected successfully (${MONGODB_URI})`);
+  })
+  .catch((err) => {
+    console.error('❌ MongoDB connection error:', err.message || err);
+    process.exit(1);
+  });
 
 // ── Routes ──────────────────────────────────────────────
 

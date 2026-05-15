@@ -43,7 +43,7 @@ export default function Navbar() {
           <Logo size={38} variant="color" />
           <div>
             <div className="font-black text-primary-900 text-lg leading-none" style={{ fontFamily: 'Merriweather, serif' }}>Successmakerz</div>
-            <div className="text-xs text-gray-400 font-medium leading-none">hmara mission</div>
+            <div className="text-xs text-gray-400 font-medium leading-none">dream mission</div>
           </div>
         </Link>
 

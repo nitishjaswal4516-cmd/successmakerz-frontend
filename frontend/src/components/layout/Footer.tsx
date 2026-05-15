@@ -38,7 +38,7 @@ export default function Footer() {
           <div>
             <h4 className="font-black text-white mb-5 text-sm uppercase tracking-wider">Quick Links</h4>
             <ul className="space-y-2.5">
-              {[['Home', '/'], ['About Us', '/about'], ['Services', '/services'], ['Countries', '/countries'], ['Contact Us', '/contact'], ['Apply Now', '/apply']].map(([label, path]) => (
+              {[['Home', '/'], ['About Us', '/about'], ['Services', '/services'], ['Countries', '/countries'], ['Contact us Us', '/contact us'], ['Apply Now', '/apply']].map(([label, path]) => (
                 <li key={path}>
                   <Link to={path} className="text-white/60 text-sm hover:text-white transition-colors flex items-center gap-1.5">
                     <span className="w-1 h-1 bg-primary-400 rounded-full" /> {label}
@@ -64,9 +64,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact us */}
           <div>
-            <h4 className="font-black text-white mb-5 text-sm uppercase tracking-wider">Contact Us</h4>
+            <h4 className="font-black text-white mb-5 text-sm uppercase tracking-wider">Contact us Us</h4>
             <ul className="space-y-3">
               <li><a href={`tel:${PHONE_1}`} className="flex items-center gap-2.5 text-white/60 hover:text-white text-sm transition-colors"><Phone size={14} />{PHONE_1}</a></li>
               <li><a href={`tel:${PHONE_2}`} className="flex items-center gap-2.5 text-white/60 hover:text-white text-sm transition-colors"><Phone size={14} />{PHONE_2}</a></li>

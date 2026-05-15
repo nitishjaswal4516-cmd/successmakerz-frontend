@@ -74,10 +74,10 @@ export const TESTIMONIALS = [
 ];
 
 export const FAQS = [
-  { q: 'What documents are required for a tourist visa?', a: 'Requirements vary by country but typically include: valid passport (6+ months validity), recent passport photos, bank statement, travel itinerary, accommodation proof, and travel insurance. Contact us for a free country-specific checklist.' },
+  { q: 'What documents are required for a tourist visa?', a: 'Requirements vary by country but typically include: valid passport (6+ months validity), recent passport photos, bank statement, travel itinerary, accommodation proof, and travel insurance. Contact us us for a free country-specific checklist.' },
   { q: 'How long does visa processing take?', a: 'Tourist visas typically take 5–15 working days. Study visas may take 4–8 weeks, and work permits can take 6–12 weeks. We recommend applying well in advance and ensure your application is complete to avoid delays.' },
   { q: 'Do you guarantee visa approval?', a: 'We provide genuine expert guidance with a high success rate. While no consultant can legally guarantee approval (final decision rests with the embassy), our thorough documentation and experienced team maximizes your approval chances.' },
-  { q: 'What are your consultancy fees?', a: 'We follow a transparent stage-wise payment process. There are absolutely no hidden charges. Contact us for a free consultation and detailed quote based on your destination and visa type.' },
+  { q: 'What are your consultancy fees?', a: 'We follow a transparent stage-wise payment process. There are absolutely no hidden charges. Contact us us for a free consultation and detailed quote based on your destination and visa type.' },
   { q: 'Can I apply for a visa for my whole family?', a: 'Yes! We handle both individual and family visa applications for tourist, study, and work purposes. We provide complete documentation support for all family members.' },
   { q: 'Which countries do you provide visa services for?', a: 'We serve Canada, Australia, New Zealand, United Kingdom, Schengen Countries, Dubai (UAE), Russia, Israel, South Korea, and Japan — covering tourist visas, study visas, and work permits.' },
   { q: 'Do I need to visit your office in person?', a: 'While an in-person consultation is welcome, we also provide complete online visa consultancy services via WhatsApp, phone, or email. Most documentation can be handled digitally for your convenience.' },

@@ -40,7 +40,7 @@ export default function Apply() {
             Start Your Visa Application
           </motion.h1>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="text-white/80 text-lg max-w-xl mx-auto">
-            Fill out the form below and our experts will contact you within 24 hours.
+            Fill out the form below and our experts will contact us you within 24 hours.
           </motion.p>
         </div>
       </section>
@@ -50,7 +50,7 @@ export default function Apply() {
           {/* Sidebar */}
           <div className="space-y-5">
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-              <h3 className="font-black text-gray-800 mb-4">Quick Contact</h3>
+              <h3 className="font-black text-gray-800 mb-4">Quick Contact us</h3>
               <div className="space-y-3">
                 <a href={`https://wa.me/${WHATSAPP_1}?text=${waMsg}`} target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-3 bg-green-50 hover:bg-green-100 rounded-xl p-3 transition-colors">
@@ -87,7 +87,7 @@ export default function Apply() {
                 className="bg-white rounded-3xl shadow-sm border border-gray-100 p-12 text-center">
                 <CheckCircle size={60} className="text-green-500 mx-auto mb-5"/>
                 <h3 className="text-2xl font-black text-gray-800 mb-3" style={{ fontFamily: 'Merriweather, serif' }}>Application Received! 🎉</h3>
-                <p className="text-gray-500 mb-8">Thank you! Our consultant will contact you within 24 hours. For instant help, reach us on WhatsApp.</p>
+                <p className="text-gray-500 mb-8">Thank you! Our consultant will contact us you within 24 hours. For instant help, reach us on WhatsApp.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a href={`https://wa.me/${WHATSAPP_1}?text=${waMsg}`} target="_blank" rel="noopener noreferrer" className="btn-green justify-center">
                     <MessageCircle size={18}/> Chat on WhatsApp

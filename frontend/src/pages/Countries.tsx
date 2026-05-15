@@ -72,10 +72,10 @@ export default function Countries() {
       <section className="py-16 bg-blue-50">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="section-title">Don't See Your Country?</h2>
-          <p className="text-gray-500 mb-8">Contact us — we may still be able to help with your visa requirements.</p>
+          <p className="text-gray-500 mb-8">Contact us us — we may still be able to help with your visa requirements.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={`https://wa.me/${WHATSAPP_1}?text=${WA_MSG}`} target="_blank" rel="noopener noreferrer" className="btn-green px-8 py-3">WhatsApp Us</a>
-            <Link to="/contact" className="btn-outline px-8 py-3">Contact Us</Link>
+            <Link to="/contact us" className="btn-outline px-8 py-3">Contact us Us</Link>
           </div>
         </div>
       </section>

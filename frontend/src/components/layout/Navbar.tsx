@@ -16,7 +16,7 @@ const NAV = [
     ]
   },
   { label: 'Countries', path: '/countries' },
-  { label: 'Contact us', path: '/contact us' },
+  { label: 'Contact ', path: '/contact ' },
 ];
 
 export default function Navbar() {

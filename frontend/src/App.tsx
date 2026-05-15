@@ -8,7 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Countries from './pages/Countries';
-import Contact us from './pages/Contact us';
+import Contact  from './pages/Contact';
 import Apply from './pages/Apply';
 import FAQ from './pages/FAQ';
 
@@ -31,7 +31,7 @@ function Layout() {
           <Route path="/services" element={<Services />} />
           <Route path="/services/:id" element={<Services />} />
           <Route path="/countries" element={<Countries />} />
-          <Route path="/contact us" element={<Contact us />} />
+          <Route path="/contact " element={<Contact  />} />
           <Route path="/apply" element={<Apply />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="*" element={<Home />} />

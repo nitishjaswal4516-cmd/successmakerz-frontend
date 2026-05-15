@@ -87,7 +87,7 @@ export default function About() {
             </div>
             <div className="flex gap-3">
               <Link to="/apply" className="btn-primary">Apply Now →</Link>
-              <Link to="/contact us" className="btn-outline">Contact us Us</Link>
+              <Link to="/contact " className="btn-outline">Contact  Us</Link>
             </div>
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3 }} className="flex justify-center">

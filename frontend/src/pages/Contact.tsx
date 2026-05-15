@@ -3,14 +3,14 @@ import { Phone, Mail, Instagram, MessageCircle, Clock, MapPin } from 'lucide-rea
 import { Link } from 'react-router-dom';
 import { PHONE_1, PHONE_2, EMAIL, INSTAGRAM, WHATSAPP_1, WHATSAPP_2, WA_MSG } from '../data';
 
-export default function Contact us() {
+export default function Contact () {
   return (
     <div>
       <section className="page-hero py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-blue-300 font-bold text-sm uppercase tracking-widest mb-3 block">Get In Touch</motion.span>
           <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-4xl md:text-5xl font-black text-white mb-4" style={{ fontFamily: 'Merriweather, serif' }}>
-            Contact us Us
+            Contact  Us
           </motion.h1>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="text-white/80 text-lg max-w-xl mx-auto">
             We're here to help. Reach out via WhatsApp, call, or email — we respond fast!

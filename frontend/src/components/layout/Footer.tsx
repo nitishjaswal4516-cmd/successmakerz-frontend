@@ -14,7 +14,7 @@ export default function Footer() {
               <Logo size={40} variant="white" />
               <div>
                 <div className="font-black text-white text-base leading-none" style={{ fontFamily: 'Merriweather, serif' }}>Successmakerz</div>
-                <div className="text-xs text-white/50 leading-none mt-0.5">Apna jai ho</div>
+                <div className="text-xs text-white/50 leading-none mt-0.5">Apna test</div>
               </div>
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-5">Trusted visa consultancy in Punjab offering genuine guidance for tourist visa, study visa & work permit across 10+ countries.</p>

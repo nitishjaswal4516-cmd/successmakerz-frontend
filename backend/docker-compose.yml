@@ -1,0 +1,38 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: successmakerz-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+      - MONGODB_URI=mongodb://mongodb:27017/successmakerz
+      - FRONTEND_URL=http://localhost:3000
+    depends_on:
+      - mongodb
+    networks:
+      - backend-network
+    restart: unless-stopped
+
+  mongodb:
+    image: mongo:7-jammy
+    container_name: successmakerz-mongodb
+    restart: unless-stopped
+    environment:
+      - MONGO_INITDB_DATABASE=successmakerz
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - backend-network
+
+volumes:
+  mongodb_data:
+
+networks:
+  backend-network:
+    driver: bridge

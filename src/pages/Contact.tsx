@@ -25,7 +25,7 @@ export default function Contact () {
               { icon: <Phone size={22}/>, color: 'bg-blue-50 text-blue-600', title: 'Call Us', lines: [PHONE_1, PHONE_2], hrefs: [`tel:${PHONE_1}`, `tel:${PHONE_2}`] },
               { icon: <MessageCircle size={22}/>, color: 'bg-green-50 text-green-600', title: 'WhatsApp', lines: [PHONE_1, PHONE_2], hrefs: [`https://wa.me/${WHATSAPP_1}?text=${WA_MSG}`, `https://wa.me/${WHATSAPP_2}?text=${WA_MSG}`], external: true },
               { icon: <Mail size={22}/>, color: 'bg-red-50 text-red-500', title: 'Email Us', lines: [EMAIL], hrefs: [`mailto:${EMAIL}`] },
-              { icon: <Instagram size={22}/>, color: 'bg-pink-50 text-pink-500', title: 'Instagram', lines: ['@successmakers_01'], hrefs: [INSTAGRAM], external: true },
+              { icon: <Instagram size={22}/>, color: 'bg-pink-50 text-pink-500', title: 'Instagram', lines: ['@nitishjaswal__'], hrefs: [INSTAGRAM], external: true },
               { icon: <Clock size={22}/>, color: 'bg-amber-50 text-amber-600', title: 'Office Hours', lines: ['Mon – Saturday', '9:00 AM – 6:00 PM'] },
               { icon: <MapPin size={22}/>, color: 'bg-purple-50 text-purple-600', title: 'Location', lines: ['Punjab, India'] },
             ].map((item, i) => (

@@ -19,8 +19,7 @@ export default function TopBar() {
         <div className="flex items-center gap-4">
           <span className="text-white/60">Mon–Sat: 9AM – 6PM</span>
           <a href={INSTAGRAM} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-pink-300 transition-colors">
-            <Instagram size={12} /> @successmakers_01
-          </a>
+            <Instagram size={12} /> @nitishjaswal__          </a>
           <a href={`https://wa.me/${WHATSAPP_1}?text=${WA_MSG}`} target="_blank" rel="noopener noreferrer"
             className="flex items-center gap-1.5 bg-green-500 hover:bg-green-400 text-white px-3 py-1 rounded-full transition-colors font-semibold">
             <MessageCircle size={12} /> WhatsApp Us

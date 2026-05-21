@@ -80,7 +80,7 @@ export default function Navbar() {
 
         {/* CTA */}
         <div className="hidden lg:flex items-center gap-3">
-          <Link to="/apply" className="btn-primary text-sm py-2.5 px-6">Apply now canary →</Link>
+          <Link to="/apply" className="btn-primary text-sm py-2.5 px-6">Apply now →</Link>
         </div>
 
         {/* Mobile toggle */}
@@ -113,7 +113,7 @@ export default function Navbar() {
                   )}
                 </div>
               ))}
-              <Link to="/apply" className="btn-primary mt-3 justify-center">Apply now canary →</Link>
+              <Link to="/apply" className="btn-primary mt-3 justify-center">Apply now →</Link>
             </div>
           </motion.div>
         )}

@@ -1,7 +1,7 @@
 export const PHONE_1 = '7876838277';
-export const PHONE_2 = '8527222348';
+export const PHONE_2 = '8629090063';
 export const WHATSAPP_1 = '917876838277';
-export const WHATSAPP_2 = '918527222348';
+export const WHATSAPP_2 = '918629090063';
 export const EMAIL = 'jaswalkaku980@gmail.com';
 export const INSTAGRAM = 'https://instagram.com/nitishjaswal__';
 export const WA_MSG = encodeURIComponent('Hello Successmakerz! I want to inquire about visa services.');

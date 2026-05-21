@@ -14,7 +14,7 @@ export default function Footer() {
               <Logo size={40} variant="white" />
               <div>
                 <div className="font-black text-white text-base leading-none" style={{ fontFamily: 'Merriweather, serif' }}>Successmakerz</div>
-                <div className="text-xs text-white/50 leading-none mt-0.5">Apna test</div>
+                <div className="text-xs text-white/50 leading-none mt-0.5">Your Dream Our Mission</div>
               </div>
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-5">Trusted visa consultancy in Punjab offering genuine guidance for tourist visa, study visa & work permit across 10+ countries.</p>
@@ -38,7 +38,7 @@ export default function Footer() {
           <div>
             <h4 className="font-black text-white mb-5 text-sm uppercase tracking-wider">Quick Links</h4>
             <ul className="space-y-2.5">
-              {[['Home', '/'], ['About Us', '/about'], ['Services', '/services'], ['Countries', '/countries'], ['Contact  Us', '/contact '], ['Apply Now', '/apply']].map(([label, path]) => (
+              {[['Home', '/'], ['About Us', '/about'], ['Services', '/services'], ['Countries', '/countries'], ['Contact  Us', '/contact '], ['Apply now canary', '/apply']].map(([label, path]) => (
                 <li key={path}>
                   <Link to={path} className="text-white/60 text-sm hover:text-white transition-colors flex items-center gap-1.5">
                     <span className="w-1 h-1 bg-primary-400 rounded-full" /> {label}

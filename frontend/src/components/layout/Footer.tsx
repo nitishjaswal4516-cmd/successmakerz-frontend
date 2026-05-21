@@ -38,7 +38,7 @@ export default function Footer() {
           <div>
             <h4 className="font-black text-white mb-5 text-sm uppercase tracking-wider">Quick Links</h4>
             <ul className="space-y-2.5">
-              {[['Home', '/'], ['About Us', '/about'], ['Services', '/services'], ['Countries', '/countries'], ['Contact  Us', '/contact '], ['Apply now', '/apply']].map(([label, path]) => (
+              {[['Home', '/'], ['About Us', '/about'], ['Services', '/services'], ['Countries', '/countries'], ['Contact  Us', '/contact '], ['Apply now canary', '/apply']].map(([label, path]) => (
                 <li key={path}>
                   <Link to={path} className="text-white/60 text-sm hover:text-white transition-colors flex items-center gap-1.5">
                     <span className="w-1 h-1 bg-primary-400 rounded-full" /> {label}

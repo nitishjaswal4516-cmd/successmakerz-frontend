@@ -48,7 +48,7 @@ export default function FAQ() {
               <a href={`https://wa.me/${WHATSAPP_1}?text=${WA_MSG}`} target="_blank" rel="noopener noreferrer" className="btn-green px-6 py-2.5 text-sm">
                 <MessageCircle size={16}/> WhatsApp Us
               </a>
-              <Link to="/apply" className="btn-white px-6 py-2.5 text-sm">Apply now →</Link>
+              <Link to="/apply" className="btn-white px-6 py-2.5 text-sm">Apply now canary →</Link>
             </div>
           </div>
         </div>

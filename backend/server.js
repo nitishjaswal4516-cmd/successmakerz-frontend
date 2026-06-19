@@ -14,11 +14,34 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // ── Middleware ──────────────────────────────────────────
+// ── Middleware ──────────────────────────────────────────
+
+const allowedOrigins = [
+  process.env.FRONTEND_URL,
+  'http://13.233.247.239', 
+  'http://localhost:5173',
+  'http://localhost:3000',
+  'http://127.0.0.1:5173',
+  'http://127.0.0.1:3000'
+];
+
 app.use(cors({
-  origin: [
-    'http://successmakerz-frontend-alb-1864514614.ap-south-1.elb.amazonaws.com',
-    'https://successmakerz-frontend-alb-1864514614.ap-south-1.elb.amazonaws.com'
-  ],
+  origin: (origin, callback) => {
+    if (!origin) {
+      return callback(null, true);
+    }
+
+    if (
+      allowedOrigins.includes(origin) ||
+      origin.startsWith('http://192.168.') ||
+      origin.startsWith('http://10.') ||
+      origin.startsWith('http://172.')
+    ) {
+      return callback(null, true);
+    }
+
+    return callback(new Error(`CORS origin denied: ${origin}`));
+  },
   methods: ['GET', 'POST', 'OPTIONS'],
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization']
@@ -26,7 +49,6 @@ app.use(cors({
 
 app.options('*', cors());
 app.use(express.json());
-
 // ── MongoDB Connection ──────────────────────────────────
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/successmakerz';
 

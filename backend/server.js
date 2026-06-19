@@ -15,13 +15,9 @@ const PORT = process.env.PORT || 5000;
 
 // ── Middleware ──────────────────────────────────────────
 // ── Middleware ──────────────────────────────────────────
-
 const allowedOrigins = [
   process.env.FRONTEND_URL,
-  'http://13.233.247.239', 
-  'http://localhost:5173',
   'http://localhost:3000',
-  'http://127.0.0.1:5173',
   'http://127.0.0.1:3000'
 ];
 

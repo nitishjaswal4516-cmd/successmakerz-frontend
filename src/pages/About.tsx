@@ -86,7 +86,7 @@ export default function About() {
               ))}
             </div>
             <div className="flex gap-3">
-              <Link to="/apply" className="btn-primary">Apply now canary →</Link>
+              <Link to="/apply" className="btn-primary">Apply Now →</Link>
               <Link to="/contact " className="btn-outline">Contact  Us</Link>
             </div>
           </motion.div>
@@ -151,7 +151,7 @@ export default function About() {
           <h2 className="text-3xl font-black text-white mb-4" style={{ fontFamily: 'Merriweather, serif' }}>Ready to Work With Us?</h2>
           <p className="text-white/80 mb-8">Get your free visa consultation today. No obligation, just genuine expert advice.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/apply" className="btn-white px-8 py-3">Apply now canary →</Link>
+            <Link to="/apply" className="btn-white px-8 py-3">Apply Now →</Link>
             <a href={`https://wa.me/${WHATSAPP_1}?text=${WA_MSG}`} target="_blank" rel="noopener noreferrer" className="btn-green px-8 py-3">WhatsApp Free Consultation</a>
           </div>
         </div>

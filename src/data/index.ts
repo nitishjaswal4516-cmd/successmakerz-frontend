@@ -5,7 +5,7 @@ export const WHATSAPP_2 = '918629090063';
 export const EMAIL = 'jaswalkaku980@gmail.com';
 export const INSTAGRAM = 'https://instagram.com/nitishjaswal__';
 export const WA_MSG = encodeURIComponent('Hello Successmakerz! I want to inquire about visa services.');
-export const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+export const API_URL = import.meta.env.VITE_API_URL || 'http://successmakerz-backend-alb-1390727132.ap-south-1.elb.amazonaws.com';
 
 export const COUNTRIES = [
   { name: 'Canada', flag: '🇨🇦', services: ['Tourist', 'Study', 'Work'], desc: 'PR pathways, world-class education & abundant employment for skilled workers.', color: 'from-red-500 to-red-700' },

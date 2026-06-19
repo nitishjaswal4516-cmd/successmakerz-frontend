@@ -81,7 +81,7 @@ function ServiceDetail({ id }: { id: string }) {
             </motion.h1>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="text-white/80 text-lg mb-8">{service.desc}</motion.p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/apply" className="btn-white px-8 py-3">Apply now canary →</Link>
+              <Link to="/apply" className="btn-white px-8 py-3">Apply Now →</Link>
               <a href={`https://wa.me/${WHATSAPP_1}?text=${WA_MSG}`} target="_blank" rel="noopener noreferrer" className="btn-green px-8 py-3">Free Consultation</a>
             </div>
           </div>
@@ -122,7 +122,7 @@ function ServiceDetail({ id }: { id: string }) {
               <h3 className="font-black text-xl mb-2" style={{ fontFamily: 'Merriweather, serif' }}>Get Free Consultation</h3>
               <p className="text-white/70 text-sm mb-6">Talk to our experts about your {service.title} requirements.</p>
               <div className="space-y-3">
-                <Link to="/apply" className="btn-white w-full justify-center py-3">Apply now canary →</Link>
+                <Link to="/apply" className="btn-white w-full justify-center py-3">Apply Now →</Link>
                 <a href={`https://wa.me/${WHATSAPP_1}?text=${WA_MSG}`} target="_blank" rel="noopener noreferrer" className="btn-green w-full justify-center py-3">WhatsApp Us</a>
               </div>
               <div className="mt-6 pt-6 border-t border-white/10">

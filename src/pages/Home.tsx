@@ -71,7 +71,7 @@ export default function Home() {
               <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
                 style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginBottom: 40 }}>
                 <Link to="/apply" style={{ background: 'white', color: '#1A3A6E', fontWeight: 800, padding: '14px 32px', borderRadius: 999, display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 16, boxShadow: '0 8px 24px rgba(0,0,0,0.2)', textDecoration: 'none' }}>
-                  Apply now canary <ArrowRight size={18} />
+                  Apply Now <ArrowRight size={18} />
                 </Link>
                 <a href={`https://wa.me/${WHATSAPP_1}?text=${WA_MSG}`} target="_blank" rel="noopener noreferrer"
                   style={{ background: '#22C55E', color: 'white', fontWeight: 800, padding: '14px 32px', borderRadius: 999, display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 16, boxShadow: '0 8px 24px rgba(34,197,94,0.35)', textDecoration: 'none' }}>
@@ -314,7 +314,7 @@ export default function Home() {
           <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: 18, marginBottom: 32 }}>Get free consultation from our expert visa consultants today.</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, justifyContent: 'center' }}>
             <Link to="/apply" style={{ background: 'white', color: '#0F1F3D', fontWeight: 800, padding: '16px 40px', borderRadius: 999, display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 16, textDecoration: 'none', boxShadow: '0 8px 24px rgba(0,0,0,0.2)' }}>
-              Apply now canary →
+              Apply Now →
             </Link>
             <a href={`https://wa.me/${WHATSAPP_1}?text=${WA_MSG}`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#22C55E', color: 'white', fontWeight: 800, padding: '16px 40px', borderRadius: 999, display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 16, textDecoration: 'none', boxShadow: '0 8px 24px rgba(34,197,94,0.35)' }}>

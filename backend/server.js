@@ -100,7 +100,7 @@ app.post('/api/leads', async (req, res) => {
       message: 'Something went wrong. Please try WhatsApp instead.',
     });
   }
-});
+}); // server change
 
 // ── Start Server ────────────────────────────────────────
 app.listen(PORT, () => {

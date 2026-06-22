@@ -5,7 +5,7 @@ export const WHATSAPP_2 = '918629090063';
 export const EMAIL = 'jaswalkaku980@gmail.com';
 export const INSTAGRAM = 'https://instagram.com/nitishjaswal__';
 export const WA_MSG = encodeURIComponent('Hello Successmakerz! I want to inquire about visa services.');
-export const API_URL =
+export const API_URL ="https://go.nitish-devops.me"
 import.meta.env.VITE_API_URL || "";
 
 export const COUNTRIES = [

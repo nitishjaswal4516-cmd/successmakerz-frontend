@@ -21,11 +21,11 @@ const leadSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  purpose: {
-    type: String,
-    required: true,
-    enum: ['tourist', 'study', 'work'],
-  },
+ purpose: {
+  type: String,
+  required: true,
+  enum: ['tourist', 'study', 'work', 'Tourist', 'Study', 'Work'],
+},
   message: {
     type: String,
     required: true,
